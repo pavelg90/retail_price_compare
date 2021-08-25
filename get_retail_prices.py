@@ -69,9 +69,9 @@ ch.setFormatter(formatter)
 logger.addHandler(ch)
 
 # SQL statements:
-start_procedure = 'exec [RetailData].[PreExecute]'
-chain_and_stores_query = 'SELECT distinct chainid, storeid FROM RetailData.StoresToLoad'
-end_procedure = 'exec [RetailData].[PostExecute]'
+start_procedure = 'execute some procedure at startup'
+chain_and_stores_query = 'load chain ids and store ids for parsing'
+end_procedure = 'execute some procedure before closing the program'
 
 cerebrus = 'https://url.publishedprices.co.il/login'
 nibit = 'http://matrixcatalog.co.il/NBCompetitionRegulations.aspx'
